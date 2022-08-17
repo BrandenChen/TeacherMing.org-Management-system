@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap');
+
+
+:root{
+    --dark:black;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    max-width:1024px;
+    margin:auto;
+}
+
+.nav-brand{
+    font-size:1.5em;
+    font-weight:bold;
+    color: white;
+}
+
+.d-flex{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border:1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px rgba(216, 202, 202, 0.527);
+}
+
+.text-dark{
+    color: black;
+}
+
+.inline{
+    display:inline-block;
+}
+
+.text-light{
+    color:var(--light);
+}
+
+.text-gradient{
+    background: linear-gradient(to right, #dd3684, #d31d4b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+#header nav{
+    background-color:#dd3684;
+    padding:1em ;
+    width:100%;
+}
+
+#content-main{
+    margin-top:3em;
+    font-family: 'Oswald', sans-serif;
+    font-style: bold;
+}
+
+#content-main .container .box-nav>a{
+    font-size:1em;
+    padding:.5em 1em;
+}
+
+#content-main .container form{
+    margin:2em 0;
+}
+
+
+table{
+    border-spacing:0px;
+    width:100%;
+}
+
+.table td, table th{
+    padding:0.5em;
+    vertical-align:top;
+    text-align:center;
+    border-top:1px solid var(--border);
+
+}
+
+
+.table td > a.btn{
+    padding: .3em .3em;
+    margin: 0.3em;
+}
+
+.table .thead-dark th{
+    color: #fff;
+    background-color: #2b2d42;
+}
+
+
+.form-title{
+    margin-top:2em;
+}
+
+
+.new_user{
+    max-width:700px;
+    margin: auto;
+}
+
+#update_user .form-group,
+#add_user .form-group{
+    margin: .5em 0;
+}
+
+#update_user .form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .6em 0;
+    border: 1px solid var(--border);
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+    border-radius: 0.3em;
+}
+#add_user .form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .6em 0;
+    border: 1px solid var(--border);
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+    border-radius: 0.3em;
+}
+
+#update_user .form-group .btn,
+#add_user .form-group .btn{
+    width: 100%;
+    display: center;
+    padding: .7em;
+    background-color:#dd3684; 
+    border: none;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    cursor: pointer;
+    border-radius: .4em;
+    margin: .3em 0;
+}

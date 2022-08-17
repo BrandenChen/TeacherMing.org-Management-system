@@ -1,0 +1,48 @@
+<%- include('include/_header') %>
+
+<main id = "content-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <div class="filter">
+                <a href="/" color="red"><i class="fa-solid fa-graduation-cap"></i>All Students</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h3 class= "text-dark">Update Student</h3>
+            <span class = "text-light">Update a student's profile</span>
+        </div>
+        <form method="POST" id = "update_user">
+            <div class = "new_user">
+        
+                <div class="form-group">
+                    <label for="name" class = "text-dark">Name</label>
+                    <input type="hidden" name ="id" value="<%=user._id%>">
+                    <input type="text" name = "name" value="<%=user.name%>" >
+                </div>
+        
+                <div class="form-group">
+                    <label for="email" class = "text-dark">Email</label>
+                    <input type="text" name = "email" value="<%=user.email%>" >
+                </div>
+        
+                <div class="form-group">
+                    <label for="balance" class = "text-dark">Balance</label>
+                    <input type="text" name = "balance" value="<%=user.balance%>" >
+                </div>
+        
+                <div class="form-group">
+                    <label for="date" class = "text-dark">Next Lesson</label>
+                    <input type="date" id="date" name="trip-start"
+                     value="2022-01-01"
+                      min="2022-01-01" max="2023-12-31">
+                </div>
+        
+                <div class = "form-group">
+                    <button type ="submit" class = "btn text-dark update">Complete</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+
+<%- include('include/_footer') %>
