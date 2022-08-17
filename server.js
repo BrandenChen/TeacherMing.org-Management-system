@@ -24,6 +24,3 @@ app.use('/css', express.static(path.resolve(__dirname,"asset/js")))
 app.use('/css', express.static(path.resolve(__dirname,"asset/img")))
 
 app.use('/',require('./server/routes/router'))
-
-
-app.listen(PORT, ()=> { console.log(`Server is running on http://localhost:${PORT}`)});
