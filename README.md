@@ -27,6 +27,9 @@ Storing student informations in database with CRUD API
 
 ## Actions
 ![image](https://user-images.githubusercontent.com/99563611/185019504-4f44b9f9-413f-4798-95d4-3410af33c659.png)
+- Edit
+- Remove
+- Notify
 
 #What's next?
 - Adding Email API to notify
